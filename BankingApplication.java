@@ -23,7 +23,7 @@ class BankAccount {
         if (amount > balance) {
             throw new InsufficientFundsException("Insufficient funds.Cannot withdraw $" + amount);
         }
-        balance = amount - balance;
+        balance = balance - amount;
         System.out.println("Withdrawal of $" + amount + " successful.\n Current balance: $" + balance);
     }
 
